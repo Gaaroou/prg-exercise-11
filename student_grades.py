@@ -51,6 +51,10 @@ def main():
         znamka = results1.get_grade(i)
         print(f"Student {i}: {body} points – {znamka}")
 
+    for i in range(pocet):
+        body = results1.get_by_index(i)
+        if body == 100:
+            print(i)
 
 if __name__ == "__main__":
     results = StudentsGrades([85, 42, 91, 67, 50, 73, 100, 38, 58])
