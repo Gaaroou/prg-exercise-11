@@ -55,6 +55,7 @@ def main():
         body = results1.get_by_index(i)
         if body == 100:
             print(i)
+    vysledky = results1.get_sorted()
 
 if __name__ == "__main__":
     results = StudentsGrades([85, 42, 91, 67, 50, 73, 100, 38, 58])
